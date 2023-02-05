@@ -24,12 +24,15 @@ const TitleText = styled.a`
   background-size: 50% auto;
   text-indent: -9999px;
 `;
-export const Header = () => {
+
+const Header = ({style}) => {
   return (
-    <StyleHeader className="test">
+    <StyleHeader style={style}>
       <Title>
-        <TitleText href="">22 F/W SEASON OFF</TitleText>
+        <TitleText>22 F/W SEASON OFF</TitleText>
       </Title>
     </StyleHeader>
   );
 };
+
+export default Header;
